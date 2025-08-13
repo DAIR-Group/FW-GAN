@@ -1,0 +1,8 @@
+tensorboard
+munch
+opencv-python
+h5py
+scikit-learn
+numpy
+matplotlib
+PyYAML
