@@ -4,7 +4,17 @@ This repository contains the reference code and dataset for the paper FW-GAN: Fr
 
 ![test](https://github.com/DAIR-Group/FW-GAN/blob/main/docs/architecture.png?raw=true#gh-dark-mode-only)
 
-From [this folder](https://pixeldrain.com/l/t1jhhxS1) you have to download the files `train.hdf5` and `test.hdf5` and place them into the `data` folder. You can also download our pretrained model `FW-GAN.pth` and place it under `/data/weights/FW-GAN.pth` for evaluation.
+## Installation
+
+```console
+conda create --name fwgan python=3.10
+conda activate fwgan
+pip3 install torch torchvision --index-url https://download.pytorch.org/whl/cu126
+git clone https://github.com/DAIR-Group/FW-GAN.git && cd FW-GAN
+pip install -r requirements.txt
+```
+
+From [this link](https://pixeldrain.com/l/t1jhhxS1) you have to download the files `train.hdf5` and `test.hdf5` and place them into the `data` folder. You can also download our pretrained model `FW-GAN.pth` and place it under `/data/weights/FW-GAN.pth` for evaluation.
 
 ## Training
 
@@ -25,7 +35,7 @@ python generate.py --config ./configs/fw_gan_iam.yml
 
 ![test](https://github.com/DAIR-Group/FW-GAN/blob/main/docs/Visualization_gen.png?raw=true#gh-dark-mode-only)
 
-![test](https://github.com/DAIR-Group/FW-GAN/blob/main/docs\Visualization_reconstruction.png?raw=true#gh-dark-mode-only)
+![test](https://github.com/DAIR-Group/FW-GAN/blob/main/docs/Visualization_reconstruction.png?raw=true#gh-dark-mode-only)
 
 ## Handwriting synthesis on HANDS-VNOnDB dataset
 ![test](https://github.com/DAIR-Group/FW-GAN/blob/main/docs/Visualization_Vietnamese.png?raw=true#gh-dark-mode-only)
