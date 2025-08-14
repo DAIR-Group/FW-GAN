@@ -22,7 +22,7 @@ except ImportError:
     def tqdm(x): return x
 
 # from fid_kid.inception import InceptionV3
-# from inception import InceptionV3
+from inception import InceptionV3
 
 
 def get_activations(data_source, n_batches, max_img_width, model, dims, device):
