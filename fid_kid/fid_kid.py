@@ -21,8 +21,8 @@ except ImportError:
     # If not tqdm is not available, provide a mock version of it
     def tqdm(x): return x
 
-# from fid_kid.inception import InceptionV3
-from inception import InceptionV3
+from fid_kid.inception import InceptionV3
+# from inception import InceptionV3
 
 
 def get_activations(data_source, n_batches, max_img_width, model, dims, device):
