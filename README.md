@@ -1,6 +1,9 @@
 # FW-GAN: Frequency-Driven Handwriting Synthesis with Wave-Modulated MLP Generator
 
-This repository contains the reference code and dataset for the paper FW-GAN: Frequency-Driven Handwriting Synthesis with Wave-Modulated MLP Generator.
+This repository contains the reference code and dataset for the paper:
+
+**[FW-GAN: Frequency-Driven Handwriting Synthesis with Wave-Modulated MLP Generator](https://arxiv.org/abs/2508.21040)**  
+Huynh Tong Dang Khoa, Dang Hoai Nam, Vo Nguyen Le Duy
 
 ![test](https://github.com/DAIR-Group/FW-GAN/blob/main/docs/architecture.png?raw=true#gh-dark-mode-only)
 
@@ -42,3 +45,17 @@ python generate.py --config ./configs/fw_gan_iam.yml
 
 ### Implementation details
 This work is partially based on the code released for [HiGAN](https://github.com/ganji15/HiGAN)
+
+## Citation
+If you find this work useful, please cite our paper:
+
+```bibtex
+@misc{khoa2025fwganfrequencydrivenhandwritingsynthesis,
+      title={FW-GAN: Frequency-Driven Handwriting Synthesis with Wave-Modulated MLP Generator}, 
+      author={Huynh Tong Dang Khoa and Dang Hoai Nam and Vo Nguyen Le Duy},
+      year={2025},
+      eprint={2508.21040},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2508.21040}, 
+}
