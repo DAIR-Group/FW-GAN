@@ -35,7 +35,7 @@ class BaseModel(object):
         self.log_root = log_root
         self.logger = None
         self.writer = None
-        alphabet_key = 'rimes_word' if opt.dataset.startswith('rimes') else 'all'
+        alphabet_key = 'vnondb' if opt.dataset.startswith('vnondb') else 'all'
         self.alphabet = Alphabets[alphabet_key]
         self.label_converter = strLabelConverter(alphabet_key)
         self.collect_fn = get_collect_fn(opt.training.sort_input)

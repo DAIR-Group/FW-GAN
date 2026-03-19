@@ -10,7 +10,7 @@ from lib.path_config import data_roots, data_paths
 
 
 class Hdf5Dataset(Dataset):
-    def __init__(self, root, split, transforms=None, alphabet_key='all'):
+    def __init__(self, root, split, transforms=None, alphabet_key='all'): # Change here for alphabet key
         super(Hdf5Dataset, self).__init__()
         self.root = root
         self._load_h5py(split)
@@ -114,7 +114,7 @@ class Hdf5Dataset(Dataset):
 
 def get_dataset(name, split):
     tag = '_'.join(name.split('_')[:2])
-    alphabet_key = 'rimes_word' if tag.startswith('rimes') else 'all'
+    alphabet_key = 'vnondb' if tag.startswith('vnondb') else 'all'
     transforms = [ToTensor(), Normalize([0.5], [0.5])]
     dataset = Hdf5Dataset(data_roots[tag],
                           data_paths[name][split],
