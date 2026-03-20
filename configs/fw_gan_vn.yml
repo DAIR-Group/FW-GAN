@@ -117,7 +117,7 @@ OcrModel:
   init: 'none'
   dropout: 0.
   # ctc config
-  n_class: 81
+  n_class: 197
   rnn_depth: 0
   bidirectional: False
 
