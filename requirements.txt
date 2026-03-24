@@ -6,3 +6,4 @@ scikit-learn
 numpy
 matplotlib
 PyYAML
+tqdm
