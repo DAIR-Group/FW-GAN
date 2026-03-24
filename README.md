@@ -26,7 +26,7 @@ python train.py --config ./configs/fw_gan_iam.yml
 ```
 
 
-## Generate Handwtitten Text Images
+## Generate Handwritten Text Images
 
 To generate all samples for FID evaluation you can use the following script:
 
